@@ -45,5 +45,5 @@ func main() {
 	authorized := r.Group("/users", middleware.JWTAuthen())
 	authorized.GET("/readall", UserController.ReadAll)
 	authorized.GET("/profile", UserController.Profile)
-	r.Run("localhost:3001")
+	r.Run("localhost:8000")
 }
