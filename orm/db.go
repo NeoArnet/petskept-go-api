@@ -12,7 +12,7 @@ var err error
 
 func InitDB() {
 
-	dsn := os.Getenv("DNS")
+	dsn := os.Getenv("DATABASE_URL")
 	Db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
