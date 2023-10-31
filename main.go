@@ -31,7 +31,7 @@ type User struct {
 }
 
 func main() {
-	err := godotenv.Load("DATABASE_URL.env")
+	err := godotenv.Load(".env")
 	if err != nil {
 		fmt.Println("Error loading .env file")
 	}
