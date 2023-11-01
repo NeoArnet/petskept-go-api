@@ -1,7 +1,7 @@
 package user
 
 import (
-	"melivecode/jwt-api/orm"
+	"petsketp-go-api/orm"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

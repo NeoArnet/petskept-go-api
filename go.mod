@@ -1,4 +1,4 @@
-module melivecode/jwt-api
+module petsketp-go-api
 
 go 1.18
 

@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	AuthController "melivecode/jwt-api/controller/auth"
-	UserController "melivecode/jwt-api/controller/user"
-	"melivecode/jwt-api/middleware"
-	_ "melivecode/jwt-api/middleware"
-	"melivecode/jwt-api/orm"
+	AuthController "petsketp-go-api/controller/auth"
+	UserController "petsketp-go-api/controller/user"
+	"petsketp-go-api/middleware"
+	_ "petsketp-go-api/middleware"
+	"petsketp-go-api/orm"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
