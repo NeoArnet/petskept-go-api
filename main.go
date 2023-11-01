@@ -5,7 +5,6 @@ import (
 	AuthController "petsketp-go-api/controller/auth"
 	UserController "petsketp-go-api/controller/user"
 	"petsketp-go-api/middleware"
-	_ "petsketp-go-api/middleware"
 	"petsketp-go-api/orm"
 
 	"github.com/gin-contrib/cors"
@@ -45,5 +44,5 @@ func main() {
 	authorized := r.Group("/users", middleware.JWTAuthen())
 	authorized.GET("/readall", UserController.ReadAll)
 	authorized.GET("/profile", UserController.Profile)
-	r.Run("localhost:8000")
+	r.Run()
 }
